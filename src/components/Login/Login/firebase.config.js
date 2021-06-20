@@ -1,9 +1,9 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyDYqHvJCjnAx7xWV6y3cn-XD1ABMZle6rM",
-  authDomain: "job-serach.firebaseapp.com",
-  projectId: "job-serach",
-  storageBucket: "job-serach.appspot.com",
-  messagingSenderId: "860217399676",
-  appId: "1:860217399676:web:a45957e5df32e3464b2cf9",
+  apiKey: "AIzaSyBeh1Y0g13wDjQIVtVqlMnFesNd_25fEe4",
+  authDomain: "job-search-11.firebaseapp.com",
+  projectId: "job-search-11",
+  storageBucket: "job-search-11.appspot.com",
+  messagingSenderId: "439275890470",
+  appId: "1:439275890470:web:615a784ba9018a242f43e7",
 };
 export default firebaseConfig;
