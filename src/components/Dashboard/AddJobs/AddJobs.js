@@ -24,7 +24,7 @@ const AddJobs = () => {
       .then((res) => res.json())
       .then((data) => {
         alert(
-          "Job details added to our pending list successfully. Admin will check it soon. Thanks!"
+          "Job details added to our pending list successfully. Admin will check it soon and will inform you with an email. Thanks!"
         );
       });
   };
@@ -109,7 +109,7 @@ const AddJobs = () => {
               />
             </div>
 
-            <input type="submit" className="btn btn-dark" value="SEND" />
+            <input type="submit" className="btn btn-dark" value="Post" />
           </form>
         </div>
       </div>

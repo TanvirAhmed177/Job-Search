@@ -61,7 +61,7 @@ function EmployeeSignUp() {
                 </select>
               </div>
 
-              <input type="submit" className="btn btn-dark" value="ADD" />
+              <input type="submit" className="btn btn-dark" value="Create" />
             </form>
           </div>
         </div>
