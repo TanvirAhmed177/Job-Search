@@ -26,6 +26,15 @@ const Jobs = () => {
     } else if (word === "Part time") {
       const filtered = jobs.filter((item) => item.type === "Part time");
       setList(filtered);
+    } else if (word === "Remote") {
+      const filtered = jobs.filter((item) => item.location === "Remote");
+      setList(filtered);
+    } else if (word === "Office") {
+      const filtered = jobs.filter((item) => item.location === "Office");
+      setList(filtered);
+    } else if (word === "Contract") {
+      const filtered = jobs.filter((item) => item.location === "Contract");
+      setList(filtered);
     }
   };
   return (
@@ -42,13 +51,30 @@ const Jobs = () => {
           className="form-select text-center mb-5"
           aria-label="Default select example"
           onChange={handleChange}
-          title="ff"
+          title="type"
         >
           <option selected value="Select Type">
             All Type
           </option>
           <option value="Full time">Full time</option>
           <option value="Part time">Part time</option>
+        </select>
+        <h4
+          style={{ display: "inline", marginRight: "10px", marginLeft: "20px" }}
+        >
+          Job Location -{" "}
+        </h4>
+        <select
+          className="form-select text-center mb-5"
+          aria-label="Default select example"
+          onChange={handleChange}
+          title="location"
+        >
+          <option selected value="Select Type">
+            All Type
+          </option>
+          <option value="Remote">Remote</option>
+          <option value="Office">Office</option>
         </select>
 
         <div className="row">

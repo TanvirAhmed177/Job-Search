@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
-import axios from "axios";
 
 import Sidebar from "../Sidebar/Sidebar";
 
@@ -12,19 +11,21 @@ const AddJobs = () => {
       postedOn: new Date(),
       title: data.title,
       type: data.type,
-      location: data.detail,
+      location: data.location,
       companyName: data.companyName,
       skills: data.skills,
       link: data.link,
     };
-    fetch("http://localhost:5000/addJobs", {
+    fetch("http://localhost:5000/pendingJobs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(jobData),
     })
       .then((res) => res.json())
       .then((data) => {
-        alert("Job details added to our database successfully. Thanks!");
+        alert(
+          "Job details added to our pending list successfully. Admin will check it soon. Thanks!"
+        );
       });
   };
   return (

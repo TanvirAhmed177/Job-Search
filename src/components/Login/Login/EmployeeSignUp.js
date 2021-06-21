@@ -1,7 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import Navbar from "../../Shared/Navbar/Navbar";
-// import Sidebar from "../Sidebar/Sidebar";
 
 function EmployeeSignUp() {
   const { handleSubmit, register } = useForm();
@@ -18,7 +17,7 @@ function EmployeeSignUp() {
     })
       .then((res) => res.json())
       .then((data) => {
-        alert("New admin added to your website successfully. Thanks!");
+        alert("New employee added to your website successfully. Thanks!");
       });
   };
   return (

@@ -5,13 +5,11 @@ import Home from "./components/Home/Home/Home";
 import Login from "./components/Login/Login/Login";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import AddJobs from "./components/Dashboard/AddJobs/AddJobs";
-import AddReview from "./components/Orders/AddReview/AddReview";
-import Orders from "./components/Orders/Orders/Orders";
+import AddReview from "./components/Reviews/AddReview/AddReview";
 import AddAdmin from "./components/Dashboard/AddAdmin/AddAdmin";
 import NoMatch from "./components/Shared/NoMatch/NoMatch";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
-import ManageService from "./components/Dashboard/ManageService/ManageService";
+import ManageJobs from "./components/Dashboard/ManageJobs/ManageJobs";
 import EmployeeSignUp from "./components/Login/Login/EmployeeSignUp";
 import JobSeekerSignUp from "./components/Login/Login/JobSeekerSignUp";
 
@@ -27,9 +25,6 @@ function App() {
             <AddReview></AddReview>
           </PrivateRoute>
 
-          <PrivateRoute path="/orders">
-            <Orders></Orders>
-          </PrivateRoute>
           <Route path="/addAdmin">
             <AddAdmin></AddAdmin>
           </Route>
@@ -52,12 +47,9 @@ function App() {
             <AddJobs></AddJobs>
           </Route>
           <Route path="/manage">
-            <ManageService></ManageService>
+            <ManageJobs></ManageJobs>
           </Route>
 
-          <Route path="/adminDashboard">
-            <Dashboard></Dashboard>
-          </Route>
           <Route path="*">
             <NoMatch></NoMatch>
           </Route>

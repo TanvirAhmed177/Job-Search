@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Nav, Navbar as NavBar, Container, Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserPlus, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -18,7 +18,10 @@ const Navbar = () => {
             sticky="top"
           >
             <NavBar.Brand className="pl-5 text-success">
-              Autorepair.
+              Hirelous
+              <span style={{ color: "greenyellow", fontWeight: "bolder" }}>
+                .
+              </span>
             </NavBar.Brand>
             <NavBar.Toggle aria-controls="responsive-navbar-nav" />
             <NavBar.Collapse id="responsive-navbar-nav">

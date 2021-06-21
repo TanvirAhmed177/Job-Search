@@ -1,17 +1,7 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 
 const ServiceDetail = ({ job }) => {
-  const {
-    title,
-    type,
-    companyName,
-    postedOn,
-    location,
-    companyUrl,
-    skills,
-    link,
-  } = job;
+  const { title, type, companyName, location, skills, link } = job;
 
   return (
     <>
@@ -22,9 +12,7 @@ const ServiceDetail = ({ job }) => {
             <h5 className="card-title">Company: {companyName}</h5>
             <h5 className="card-title">Type: {type}</h5>
             <h5 className="card-title">Location: {location}</h5>
-            <h5 className="card-title">
-              Skills required: {skills[0]}, {skills[1]},{skills[2]}
-            </h5>
+            <h5 className="card-title">Skills required: {skills}</h5>
             <p className="card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum
               quo non earum sunt consectetur laudantium esse atque veniam? Illo

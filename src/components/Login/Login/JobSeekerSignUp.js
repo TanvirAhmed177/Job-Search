@@ -1,7 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import Navbar from "../../Shared/Navbar/Navbar";
-// import Sidebar from "../Sidebar/Sidebar";
 
 function JobSeekerSignUp() {
   const { handleSubmit, register } = useForm();
