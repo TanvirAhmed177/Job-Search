@@ -16,7 +16,7 @@ const AddJobs = () => {
       skills: data.skills,
       link: data.link,
     };
-    fetch("http://localhost:5000/pendingJobs", {
+    fetch("https://mighty-mesa-38038.herokuapp.com/pendingJobs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(jobData),

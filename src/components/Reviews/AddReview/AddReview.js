@@ -12,7 +12,7 @@ const AddReview = () => {
       location: data.location,
       review: data.review,
     };
-    fetch("http://localhost:5000/addReviews", {
+    fetch("https://mighty-mesa-38038.herokuapp.com/addReviews", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(reviewData),

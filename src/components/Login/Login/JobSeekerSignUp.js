@@ -10,7 +10,7 @@ function JobSeekerSignUp() {
       email: data.email,
       type: data.type,
     };
-    fetch("http://localhost:5000/addJobSeeker", {
+    fetch("https://mighty-mesa-38038.herokuapp.com/addJobSeeker", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(jobSeekerData),

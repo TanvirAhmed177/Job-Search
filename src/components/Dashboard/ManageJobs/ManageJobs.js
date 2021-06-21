@@ -6,7 +6,7 @@ import Delete from "../../../images/Group 33150.png";
 const ManageService = () => {
   const [pendingJobs, setPendingJobs] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/jobsPending")
+    fetch("https://mighty-mesa-38038.herokuapp.com/jobsPending")
       .then((res) => res.json())
       .then((data) => {
         setPendingJobs(data);
@@ -23,7 +23,7 @@ const ManageService = () => {
       skills: j.skills,
       link: j.link,
     };
-    fetch("http://localhost:5000/addJobs", {
+    fetch("https://mighty-mesa-38038.herokuapp.com/addJobs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(jobData),
@@ -38,7 +38,7 @@ const ManageService = () => {
 
   const handleDelete = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/deleteJobs/${id}`, {
+    fetch(`https://mighty-mesa-38038.herokuapp.com/deleteJobs/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

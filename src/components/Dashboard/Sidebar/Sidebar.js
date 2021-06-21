@@ -18,7 +18,7 @@ const Sidebar = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/isAdmin", {
+    fetch("https://mighty-mesa-38038.herokuapp.com/isAdmin", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email: loggedInUser.email }),
@@ -31,7 +31,7 @@ const Sidebar = () => {
 
   console.log(loggedInUser.email);
   useEffect(() => {
-    fetch("http://localhost:5000/isEmployee", {
+    fetch("https://mighty-mesa-38038.herokuapp.com/isEmployee", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email: loggedInUser.email }),

@@ -10,7 +10,7 @@ function EmployeeSignUp() {
       email: data.email,
       type: data.type,
     };
-    fetch("http://localhost:5000/addEmployee", {
+    fetch("https://mighty-mesa-38038.herokuapp.com/addEmployee", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(employeeData),
