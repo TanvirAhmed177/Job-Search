@@ -61,7 +61,7 @@ const ManageService = () => {
                 <th>Location</th>
                 <th>Company</th>
                 <th>Skills</th>
-                <th>Approve</th>
+                <th>Approve / Delete</th>
               </tr>
             </thead>
 
